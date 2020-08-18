@@ -1,38 +1,31 @@
 import { Router } from 'express';
-import { uuid } from 'uuidv4';
+
+import ProductsRepository from '../repositories/ProductsRepository'
+import CreateProductService from '../services/CreateProductService'
 
 const productsRouter = Router()
+const productsRepository = new ProductsRepository()
 
-interface Product {
-  id: string,
-  title: string,
-  amout: number,
-  price: number,
-}
+productsRouter.get('/', (req, res) => {
+  const products = productsRepository.all()
 
-const products: Product[] = []
+  return res.json(products)
+})
 
 productsRouter.post('/', (req, res) => {
-  const { title, amout, price } = req.body;
+  try {
+    const { title, amout, price, image } = req.body;
 
-  const checkSameTitle = products.find(product =>
-    product.title
-  )
+    const createProduct = new CreateProductService(productsRepository)
 
-  if (checkSameTitle) {
-    return res.status(400).json({ message: 'product with same title' })
+    const product = createProduct.run({ title, amout, image, price })
+
+    return res.json(product)
+
+  } catch (err) {
+    return res.status(400).json({ error: err.message })
+
   }
-
-  const product = {
-    id: uuid(),
-    title,
-    amout,
-    price,
-  }
-
-  products.push(product)
-
-  return res.json(product)
 })
 
 export default productsRouter;

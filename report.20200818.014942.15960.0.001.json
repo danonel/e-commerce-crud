@@ -1,0 +1,508 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200818.014942.15960.0.001.json",
+    "dumpEventTime": "2020-08-18T01:49:42Z",
+    "dumpEventTimeStamp": "1597726182473",
+    "processId": 15960,
+    "threadId": null,
+    "cwd": "C:\\Users\\Daniel\\Desktop\\projects\\ecommerce-example\\backend",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Daniel\\Desktop\\projects\\ecommerce-example\\backend\\node_modules\\.bin\\\\..\\ts-node-dev\\bin\\ts-node-dev",
+      "--ignore-watch",
+      "node_modules",
+      "src/server.ts"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.3/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18363",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "AMD Ryzen 5 2400G with Radeon Vega Graphics    ",
+        "speed": 3893,
+        "user": 7201015,
+        "nice": 0,
+        "sys": 5640656,
+        "idle": 26734515,
+        "irq": 483234
+      },
+      {
+        "model": "AMD Ryzen 5 2400G with Radeon Vega Graphics    ",
+        "speed": 3893,
+        "user": 6085375,
+        "nice": 0,
+        "sys": 3962546,
+        "idle": 29528062,
+        "irq": 191328
+      },
+      {
+        "model": "AMD Ryzen 5 2400G with Radeon Vega Graphics    ",
+        "speed": 3893,
+        "user": 8630187,
+        "nice": 0,
+        "sys": 6479765,
+        "idle": 24466031,
+        "irq": 63562
+      },
+      {
+        "model": "AMD Ryzen 5 2400G with Radeon Vega Graphics    ",
+        "speed": 3893,
+        "user": 6470218,
+        "nice": 0,
+        "sys": 3753593,
+        "idle": 29352171,
+        "irq": 42875
+      },
+      {
+        "model": "AMD Ryzen 5 2400G with Radeon Vega Graphics    ",
+        "speed": 3893,
+        "user": 7898765,
+        "nice": 0,
+        "sys": 4655703,
+        "idle": 27021515,
+        "irq": 52578
+      },
+      {
+        "model": "AMD Ryzen 5 2400G with Radeon Vega Graphics    ",
+        "speed": 3893,
+        "user": 7548031,
+        "nice": 0,
+        "sys": 4030593,
+        "idle": 27997359,
+        "irq": 40937
+      },
+      {
+        "model": "AMD Ryzen 5 2400G with Radeon Vega Graphics    ",
+        "speed": 3893,
+        "user": 8130031,
+        "nice": 0,
+        "sys": 5007703,
+        "idle": 26438250,
+        "irq": 58656
+      },
+      {
+        "model": "AMD Ryzen 5 2400G with Radeon Vega Graphics    ",
+        "speed": 3893,
+        "user": 8113406,
+        "nice": 0,
+        "sys": 4899265,
+        "idle": 26563296,
+        "irq": 119781
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Ethernet 2",
+        "internal": false,
+        "mac": "0a:00:27:00:00:12",
+        "address": "fe80::c5ba:8306:b63b:3abd",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 18
+      },
+      {
+        "name": "Ethernet 2",
+        "internal": false,
+        "mac": "0a:00:27:00:00:12",
+        "address": "192.168.56.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Ethernet 3",
+        "internal": false,
+        "mac": "40:b0:76:a5:4e:df",
+        "address": "fe80::939:11bc:1365:c5f1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "Ethernet 3",
+        "internal": false,
+        "mac": "40:b0:76:a5:4e:df",
+        "address": "192.168.1.9",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Daniel"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6c5bd2449",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11577"
+    },
+    {
+      "pc": "0x00007ff6c5bd69a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29337"
+    },
+    {
+      "pc": "0x00007ff6c5bd5828",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24856"
+    },
+    {
+      "pc": "0x00007ff6c5d0d8c2",
+      "symbol": "v8::base::CPU::has_sse+68658"
+    },
+    {
+      "pc": "0x00007ff6c6529bbe",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff6c6511c91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff6c63de1ec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff6c63e9420",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff6c63e5f44",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff6c63db743",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff6c63d9db4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff6c63fafbd",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff6c6161871",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff6c6976c4d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x000000ec45b08d2d",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2155663360,
+    "totalCommittedMemory": 2155663360,
+    "usedMemory": 2143583256,
+    "availableMemory": 44734312,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047456,
+        "used": 137424,
+        "available": 910032
+      },
+      "old_space": {
+        "memorySize": 1970417664,
+        "committedMemory": 1970417664,
+        "capacity": 1962825840,
+        "used": 1962200952,
+        "available": 624888
+      },
+      "code_space": {
+        "memorySize": 3051520,
+        "committedMemory": 3051520,
+        "capacity": 2525952,
+        "used": 2525952,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 639120,
+        "used": 639120,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 178733056,
+        "committedMemory": 178733056,
+        "capacity": 178044216,
+        "used": 178044216,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 184.031,
+    "kernelCpuSeconds": 5.375,
+    "cpuConsumptionPercent": 5.75527,
+    "maxRss": 2231222272,
+    "pageFaults": {
+      "IORequired": 979356,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 21936,
+      "writes": 82
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\Daniel\\Desktop\\projects\\ecommerce-example\\backend",
+    "ACLOCAL_PATH": "C:\\Program Files\\Git\\mingw64\\share\\aclocal;C:\\Program Files\\Git\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Daniel\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132346850552806710",
+    "CLASSPATH": ".;",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DANIEL",
+    "COMSPEC": "C:\\WINDOWS\\system32\\cmd.exe",
+    "CONFIG_SITE": "C:/Program Files/Git/mingw64/etc/config.site",
+    "DISPLAY": "needs-to-be-defined",
+    "DOCKER_TOOLBOX_INSTALL_PATH": "D:\\Docker Toolbox",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GIT_ASKPASS": "c:\\Users\\Daniel\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "GOPATH": "C:\\Users\\Daniel\\go",
+    "HOME": "C:\\Users\\Daniel",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Daniel",
+    "HOSTNAME": "Daniel",
+    "INFOPATH": "C:\\Program Files\\Git\\usr\\local\\info;C:\\Program Files\\Git\\usr\\share\\info;C:\\Program Files\\Git\\usr\\info;C:\\Program Files\\Git\\share\\info",
+    "INIT_CWD": "C:\\Users\\Daniel\\Desktop\\projects\\ecommerce-example\\backend",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_211",
+    "LANG": "pt_BR.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Daniel\\AppData\\Local",
+    "LOGONSERVER": "\\\\DANIEL",
+    "MANPATH": "C:\\Program Files\\Git\\mingw64\\local\\man;C:\\Program Files\\Git\\mingw64\\share\\man;C:\\Program Files\\Git\\usr\\local\\man;C:\\Program Files\\Git\\usr\\share\\man;C:\\Program Files\\Git\\usr\\man;C:\\Program Files\\Git\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "C:/Program Files/Git/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "C:/Program Files/Git/mingw64",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev:server\"],\"original\":[\"run\",\"dev:server\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v12.16.3 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "dev:server",
+    "npm_lifecycle_script": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_dependencies_express": "^4.17.1",
+    "npm_package_dependencies__types_express": "^4.17.7",
+    "npm_package_devDependencies_eslint": "6.8.0",
+    "npm_package_devDependencies_eslint_config_airbnb_base": "^14.2.0",
+    "npm_package_devDependencies_eslint_config_prettier": "^6.11.0",
+    "npm_package_devDependencies_eslint_import_resolver_typescript": "^2.2.1",
+    "npm_package_devDependencies_eslint_plugin_import": "^2.21.2",
+    "npm_package_devDependencies_eslint_plugin_prettier": "^3.1.4",
+    "npm_package_devDependencies_prettier": "^2.0.5",
+    "npm_package_devDependencies_ts_node_dev": "^1.0.0-pre.57",
+    "npm_package_devDependencies_typescript": "^3.9.7",
+    "npm_package_devDependencies__typescript_eslint_eslint_plugin": "^3.9.1",
+    "npm_package_devDependencies__typescript_eslint_parser": "^3.9.1",
+    "npm_package_license": "MIT",
+    "npm_package_main": "index.js",
+    "npm_package_name": "backend",
+    "npm_package_scripts_build": "tsc",
+    "npm_package_scripts_dev_server": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "npm_package_version": "1.0.0",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OLDPWD": "C:/Users/Daniel/Desktop/projects/ecommerce-example",
+    "OneDrive": "C:\\Users\\Daniel\\OneDrive",
+    "ORIGINAL_PATH": "C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Daniel\\bin;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Python\\Python38-32;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Yarn\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\Go\\bin;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Python\\Python38-32;C:\\Users\\Daniel\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.3.3\\bin;C:\\Users\\Daniel\\AppData\\Local\\Yarn\\bin;C:\\Users\\Daniel\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Daniel\\AppData\\Roaming\\npm;D:\\Docker Toolbox;C:\\Users\\Daniel\\go\\bin",
+    "ORIGINAL_TEMP": "C:/Users/Daniel/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/Daniel/AppData/Local/Temp",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\Daniel\\AppData\\Local\\Temp\\yarn--1597722891483-0.554138071570137;C:\\Users\\Daniel\\Desktop\\projects\\ecommerce-example\\backend\\node_modules\\.bin;C:\\Users\\Daniel\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Daniel\\bin;C:\\Users\\Daniel\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Daniel\\bin;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Python\\Python38-32;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Yarn\\bin;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\Go\\bin;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Python\\Python38-32;C:\\Users\\Daniel\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Daniel\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.3.3\\bin;C:\\Users\\Daniel\\AppData\\Local\\Yarn\\bin;C:\\Users\\Daniel\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Daniel\\AppData\\Roaming\\npm;D:\\Docker Toolbox;C:\\Users\\Daniel\\go\\bin;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "C:\\Program Files\\Git\\mingw64\\lib\\pkgconfig;C:\\Program Files\\Git\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD",
+    "PROCESSOR_LEVEL": "23",
+    "PROCESSOR_REVISION": "1100",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "/c/Users/Daniel/Desktop/projects/ecommerce-example/backend",
+    "PyCharm Community Edition": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2019.3.3\\bin;",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "4",
+    "SSH_ASKPASS": "C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Daniel\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.48.0",
+    "TMP": "C:\\Users\\Daniel\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\Daniel\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DANIEL",
+    "USERDOMAIN_ROAMINGPROFILE": "DANIEL",
+    "USERNAME": "Daniel",
+    "USERPROFILE": "C:\\Users\\Daniel",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\Daniel\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\Daniel\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-d71f57efdd-sock",
+    "WINDIR": "C:\\WINDOWS",
+    "YARN_WRAP_OUTPUT": "false",
+    "_": "/usr/bin/winpty"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}
