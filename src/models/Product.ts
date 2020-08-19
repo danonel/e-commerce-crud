@@ -1,4 +1,4 @@
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 class Product {
   id: string;
@@ -14,7 +14,7 @@ class Product {
   isAvalaibe: boolean;
 
   constructor({ title, amout, price, image, isAvalaibe }: Omit<Product, 'id'>) {
-    this.id = uuid();
+    this.id = uuidv4();
     this.title = title;
     this.amout = amout;
     this.price = price;
